@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+div#menu {
+    border: 0px;
+    background-color: none;
+    padding: 0px;
+    margin: 0px;
+    height: 20%;
+}
+
+h1 {
+    Text-align: center;
+}
+
+section#Chiken {
+    border: 2px solid black;
+    background-color: #8b9ebc;
+    padding: 0px;
+    margin: 30px;
+    height: 100px;
+}
+
+section#Beef {
+    border: 2px solid black;
+    background-color: #8b9ebc;
+    padding: 0px;
+    margin: 30px;
+    height: 100px;
+}
+
+section#Sushi {
+    border: 2px solid black;
+    background-color: #8b9ebc;
+    padding: 0px;
+    margin: 30px;
+    height: 100px;
+}
