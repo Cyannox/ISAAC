@@ -1,64 +1,86 @@
 /* Base Style */
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-div#menu {
-    border: 0px;
-    background-color: none;
-    padding: 0px;
-    margin: 0px;
-    height: 20%;
-    
+#menu {
+    Margin: 30px 0px 40px;
 }
 
 h1 {
     Text-align: center;
 }
-.contenido {
 
-width: 90%;
-height: 150px;
-margin-right: auto;
-margin-left: auto;
+.row {
+    box-sizing: border-box;
+    min-height: 500px;  
 
+}
+section {
+    float: left;
+    border: 2px solid black;
+    width: 32%;
+    margin: 0 0.66%;
+    background-color: #999999;
 }
 
 .plato {
-   position: relative;
-   float: right;
-   clear: both;
+    float: right;
+    background-color: aqua;
+    min-width: 200px;
+    text-align: center;
+    font-weight: bold;  
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.row {
 
-    width: 100%;
+#chicken .plato{
+    background-color: violet;
+}
+#beef .plato{
+    background-color: red;
+    color: white;
+}   
+#sushi .plato{
+    background-color: yellowgreen;
+}
+.content{
+  clear: both;  
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     
+
+    #sushi {
+        width: 98%;
+        margin: 20px 1% 0px ;
+
+    }
+    #beef, #chicken {
+        width: 48%;
+        margin: 1%;
+    }
+
 }
 
-#Chiken{ 
-    float: left; 
-    width: 33.33%;
-    background: #999999;
-    border: 6px solid white; 
-    height: 200px;
+
+@media only screen and  (max-width: 767px) {
+    
+
+ section {
+
+    width: 98%;
+    margin: 20px 1% 0px ;
+ }
+
 }
 
-#Beef{ 
-    float: left;
-    width: 33.33%;;
-    background: #999999;
-    border: 6px solid white; 
-    height: 200px;
-}
 
-#Sushi{ 
-    float: left; 
-    width: 33.33%; 
-    background: #999999;
-    border: 6px solid white; 
-    height: 200px;
-}
