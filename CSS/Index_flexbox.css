@@ -38,23 +38,24 @@ section {
     
 }
 #chicken .plato {
-    display: flex;
     align-items: center;
     margin: 0 0 0 auto;
     background-color: violet;
 }
 #beef .plato {
-    display: flex;
     align-items: center;
     margin: 0 0 0 auto;
     background-color: red;
     color: white;
 }
 #sushi .plato{
-    display: flex;
     align-items: center;
     margin: 0 0 0 auto;
     background-color: yellowgreen;
+}
+.content{
+    align-items: center;
+    padding: 10px;
 }
 
 /*with flex
