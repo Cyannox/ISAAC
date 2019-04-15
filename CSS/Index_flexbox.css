@@ -16,45 +16,45 @@ h1 {
 }
 
 .row {
-    box-sizing: border-box;
-    min-height: 500px;  
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 section {
-    float: left;
+    display: flex;
+    flex-direction: column;
     border: 2px solid black;
-    width: 32%;
-    margin: 0 0.66%;
     background-color: #999999;
+    margin: 0 0.66%;
 }
-
 .plato {
-    justify-content: flex-start;
-    float: right;
-    background-color: aqua;
-    min-width: 200px;
-    text-align: center;
-    font-weight: bold;  
-    border-left: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border-bottom: 2px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+    width: 200px;
+    
 }
-
-
-#chicken .plato{
+#chicken .plato {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
     background-color: violet;
 }
-#beef .plato{
+#beef .plato {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
     background-color: red;
     color: white;
-}   
-#sushi .plato{
-    background-color: yellowgreen;
 }
-.content{
-  clear: both;  
-  padding: 10px;
+#sushi .plato{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    background-color: yellowgreen;
 }
 
 /*with flex
@@ -66,36 +66,45 @@ section {
 section{
     background: #999999;
     flex: 1 1 0px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 10px;
 }
 */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
-
+    .row {
+        flex-wrap: wrap;
+    }
+   
     #sushi {
         width: 98%;
-        margin: 20px 1% 0px ;
-
+        margin-top: 10px;
     }
     #beef, #chicken {
         width: 48%;
-        margin: 1%;
+    
     }
+
+
 
 }
 
 
 @media only screen and  (max-width: 767px) {
-    
 
- section {
+    .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    section {
 
     width: 98%;
     margin: 20px 1% 0px ;
  }
 
+ 
 }
+
 
 
