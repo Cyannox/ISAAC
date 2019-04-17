@@ -29,7 +29,6 @@ section {
 }
 
 .plato {
-    justify-content: flex-start;
     float: right;
     background-color: aqua;
     min-width: 200px;
